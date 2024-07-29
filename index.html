@@ -1,9 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-    <h1>Louis Pace</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-    
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS | Position</title>
+</head>
+
+<body>
+    <h1>Position</h1>
+    <h2>Possible Values</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="default">static</td>
+                <td>
+                    <ul>
+                        <li>The default value.</li>
+                        <li>No change to normal flow.</li>
+                        <li>top, right, bottom, left, and z-index have <strong>no effect</strong>.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>
+                    <ul>
+                        <li>Offset the element from its normal flow.</li>
+                        <li>Other elements are not affected.</li>
+                        <li>For example, <span class="code">top: 10px; left: 5px;</span> moves the element down 10 pixels and to the right 5 pixels.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>
+                    <ul>
+                        <li>Reposition the element based on its container.</li>
+                        <li>The element <em>is</em> removed from the normal flow, so surrounding elements are affected.</li>
+                        <li>Margins do not collapse.</li>
+                        <li>For example, <span class="code">top: 10px; left 5px;</span> positions the element down 10 pixels and to the right 5 pixels from the container's upper left corner.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>
+                    <ul>
+                        <li>Similar to absolute, but the element is positioned relative to the initial container, not the immediate ancestor.</li>
+                        <li>I.e., the element is placed at a specific location on the screen.</li>
+                        <li>The element does not scroll with the rest of the page.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>
+                    <ul>
+                        <li>Positioned according to the normal flow, but does not scroll past its offset.</li>
+                        <li>Useful for keeping headers at the top of scrolling tables or lists.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">For more information, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">the MDN documentation</a>.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
 </html>

@@ -1,0 +1,53 @@
+.code {
+    background-color: cornflowerblue;
+    color: navy;
+    font-family: monospace;
+}
+
+a {
+    color: yellow;
+}
+
+a:visited {
+    color: magenta;
+}
+
+body {
+    background-color: navy;
+    color: white;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+h2 {
+    color: cornflowerblue;
+    text-align: center;
+}
+
+table {
+    border: solid 2px yellow;
+    margin: 0 auto;
+    width: 600px;
+}
+
+td {
+    border-top: solid 1px blueviolet;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: cornflowerblue;
+    color: navy;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+ul {
+    padding-left: 10px;
+}
